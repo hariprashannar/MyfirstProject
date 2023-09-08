@@ -38,10 +38,6 @@ class MyFormHandler(tornado.web.RequestHandler):
         except Exception as e:
             print(e)
             self.write(e)
-# class PostHandler(tornado.web.RequestHandler):
-#     def get(self,topic_id):
-        
-
 
 async def getalldata(topic_id=None):
     connectiondb = await init_db()
